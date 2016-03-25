@@ -1,2 +1,2 @@
 # springbootref
-code sample in spring boot
+code sample in spring boot reference
