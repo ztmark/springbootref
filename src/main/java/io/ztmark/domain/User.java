@@ -1,11 +1,14 @@
 package io.ztmark.domain;
 
+import org.springframework.beans.factory.annotation.Value;
+
 /**
  * Author: Mark
  * Date  : 16/3/25
  */
 public class User {
 
+//    @Value("${name}")
     private String name;
     private int age;
 

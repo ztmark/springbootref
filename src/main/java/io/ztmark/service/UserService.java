@@ -17,4 +17,8 @@ public class UserService {
     public UserService(User user) {
         this.user = user;
     }
+
+    public User getUser() {
+        return user;
+    }
 }
