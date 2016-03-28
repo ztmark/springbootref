@@ -21,7 +21,7 @@ public class CustomizedConfiguration {
     public User randomUser() {
         return new User("mark", 23);
     }
-
+//
     @Profile("prod")
     @Bean(name = "user")
     public User aUser() {
@@ -30,7 +30,6 @@ public class CustomizedConfiguration {
 
     @Bean
     public EmbeddedServletContainerCustomizer containerCustomizer() {
-        return container -> container.addErrorPages(new ErrorPage(HttpStatus.BAD_REQUEST, "/error.html"));
-
+        return container -> container.addErrorPages(new ErrorPage(HttpStatus.NOT_FOUND, "/404.html"));
     }
 }
