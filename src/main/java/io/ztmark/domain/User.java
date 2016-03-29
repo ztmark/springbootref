@@ -1,7 +1,5 @@
 package io.ztmark.domain;
 
-import org.springframework.beans.factory.annotation.Value;
-
 /**
  * Author: Mark
  * Date  : 16/3/25

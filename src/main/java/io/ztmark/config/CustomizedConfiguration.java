@@ -30,6 +30,7 @@ public class CustomizedConfiguration {
 
     @Bean
     public EmbeddedServletContainerCustomizer containerCustomizer() {
-        return container -> container.addErrorPages(new ErrorPage(HttpStatus.NOT_FOUND, "/404.html"));
+        return container -> container.addErrorPages(new ErrorPage(HttpStatus.NOT_FOUND, "/404.html"),
+                new ErrorPage(HttpStatus.FORBIDDEN, "/403.html"));
     }
 }
